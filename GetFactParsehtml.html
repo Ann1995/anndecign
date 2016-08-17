@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="jquery-1.12.1.min.js"></script>
+    <meta charset="utf-8" />
+
+    <script>
+
+        var currentNumber = 0;
+
+        $(document).ready(function () {
+
+            getUpdates(currentNumber);
+
+            $(window).on('scroll', function () {
+			var top = $(window).scrollTop();
+			var docH = $(document).height();
+			var windowH = $(window).height();
+                if (top < docH - windowH) {
+                    getUpdates(currentNumber);
+                }
+            }).scroll();
+
+        });
+
+        function getUpdates(number)
+        {
+            $.ajax(
+            {
+                url: "http://snowsoft.cloudapp.net:8080/api/values/getfact?section=0&num=" + number,
+                type: "GET",
+                success: function (data) {
+
+                    var p = document.getElementById("p");
+
+                    p.innerHTML += data.Fact + "\r\n" + data.id + "\r\n" + data.num + "\r\n";
+
+                }
+            });
+            currentNumber++;
+        }
+
+
+
+    </script>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+    <p id="p"></p>
+
+</body>
+</html>

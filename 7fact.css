@@ -1,0 +1,24 @@
+﻿body {
+    /*padding:0 80px;*/
+background:url(/photo/1eb5d8d24eпп76.png)no-repeat;
+background-size:100%;
+height: 140px;
+display:block;
+padding:0 !important;
+margin:0;
+}
+.fact1, .fact2, .fact3, .fact4, .fact5, .fact6, .fact7
+{
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:left;
+    color:rgba(14, 5, 52, 0.59);
+    margin:0 10px;
+ 
+}
+h1{
+    text-align:center;
+}
+/*div.container{
+    margin: 0 10px;
+}*/

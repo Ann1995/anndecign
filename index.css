@@ -1,0 +1,25 @@
+﻿body{
+ 
+}
+img {
+    width: 33%;
+    height: auto;
+    float: left; 
+    max-width: 235px;
+}
+h3, p{
+    text-align:center;
+    color:rgba(128, 128, 128, 0.42);
+}
+.container{
+ 
+}
+.blur {-webkit-filter: blur(4px);filter: blur(4px);}
+.brightnes {-webkit-filter: brightness(250%);filter: brightness(250%);}
+.contrast {-webkit-filter: contrast(180%);filter: contrast(180%);}
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);filter: hue-rotate(180deg);}
+.invert {-webkit-filter: invert(100%);filter: invert(100%);}
+.opacity {-webkit-filter: opacity(50%);filter: opacity(50%);}
+
+

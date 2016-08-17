@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="jquery-1.12.1.min.js"></script>
+
+
+    <script>
+
+        var currentNumber = 1;
+        var p;
+
+        $(document).ready(function () {
+            p = document.getElementById("p");
+            p.style.backgroundColor = "#F0F8FF";
+
+            for (var i = 0; i < 20; i++) {
+                getUpdates(i);
+            }
+
+
+            $(window).on('scroll', function () {
+                var top = $(window).scrollTop();
+                var docH = $(document).height();
+                var windowH = $(window).height();
+                if (top == docH - windowH)
+                    for (var i = 0; i < 4; i++) {
+                        getUpdates(currentNumber);
+                            ++currentNumber;
+                    }
+            });
+
+        });
+        function getUpdates(number) {
+            $.ajax(
+            {
+                url: "http://snowsoft.cloudapp.net:8080/api/values/getfact?section=0&num=" + number,
+                type: "GET",
+                success: function (data) {
+                    if (currentNumber)
+                    p.innerHTML += data.Fact + "<br/>" + "<hr>";
+                }
+            });
+
+        }
+
+
+
+    </script>
+    <meta name="description" content="The description of my page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <style>
+        p {
+            padding: 20px;
+            color: sienna;
+            margin: 30px;
+            border: solid 10px;
+        }
+    </style>
+
+    <p id="p"></p>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿body {
+    /*padding: 0 80px;*/
+    text-align: justify;
+      background: url('photo/footer-logo.png') no-repeat scroll 800px bottom ;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.row {
+    margin: 0 10px;
+}
+
+#footer {
+    text-align: left;
+  
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> signin </title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="signin.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .row
+{
+    margin:10px;
+}
+    </style>
+
+    <div class="container">
+
+        <form class="form-signin" role="form">
+            <h2 class="form-signin-heading">Вход на сайт</h2>
+            <input type="email" class="form-control" placeholder="Email" id="email" required autofocus>
+            <input type="password" class="form-control" placeholder="Пароль" id="password" required>
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Запомнить меня
+            </label>
+            <p id="errorMessage"></p>
+            <div class="row">
+                <button id="spinner"style="visibility:hidden" class="btn btn-success btn-xs"><i class="fa fa-spinner fa-spin"></i> Loading</button>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" id="submit"  type="button">Войти</button>
+        </form>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-1.12.1.min.js"></script>
+    <script src="JavaScript/jquery.cookie.js"></script>
+    <!--библиотека дляjQuery куки!!! самая хорошая.-->
+    <script src="JavaScript/Login.js"></script>
+</body>
+</html>

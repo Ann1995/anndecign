@@ -1,0 +1,13 @@
+﻿
+body{
+    /*padding:0 80px;*/
+}
+.span8{
+    float:right;
+    margin:10px 30px 10px 10px;
+}
+.row{
+    float:left;
+    margin:10px 0px 10px 30px ;
+    
+}

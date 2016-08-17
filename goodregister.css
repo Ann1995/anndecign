@@ -1,0 +1,14 @@
+﻿body {
+    background-color: #eee;
+    background-image: url('photo/victory-34627_960_720.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin: 130px;
+    padding: 130px;
+    position: absolute;
+}
